@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tesina</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MENU FISSO -->
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#religione">Religione</a></li>
+        <li><a href="#scienze">Scienze</a></li>
+        <li><a href="#geografia">Geografia</a></li>
+        <li><a href="#tecnologia">Tecnologia</a></li>
+        <li><a href="#italiano">Italiano</a></li>
+        <li><a href="#edcivica">Ed. Civica</a></li>
+        <li><a href="#english">English</a></li>
+        <li><a href="#francaise">Française</a></li>
+        <li><a href="#storia">Storia</a></li>
+        <li><a href="#edfisica">Ed. Fisica</a></li>
+        <li><a href="#musica">Musica</a></li>
+        <li><a href="#arte">Arte</a></li>
+        <li><button id="toggleMusicBtn">Play Music</button></li>
+      </ul>
+    </nav>
+
+    <!-- HOMEPAGE HERO MISTERIOSO -->
+    <div class="hero">
+      <div class="overlay"></div>
+
+      <div
+        class="floating-ghost forward"
+        style="top: 25%; left: -100px; animation-delay: 0s"
+      ></div>
+      <div
+        class="floating-ghost reverse"
+        style="top: 40%; right: -100px; animation-delay: 3s"
+      ></div>
+      <div
+        class="floating-ghost forward"
+        style="top: 60%; left: -100px; animation-delay: 6s"
+      ></div>
+      <div
+        class="floating-ghost reverse"
+        style="top: 75%; right: -100px; animation-delay: 9s"
+      ></div>
+
+      <div class="content">
+        <h1 class="animated-title">IL PARANORMALE</h1>
+        <p id="typewriter" class="animated-subtitle">Un viaggio nell'Ignoto</p>
+      </div>
+    </div>
+
+    <!-- SEZIONI DELLA TESINA -->
+    <section id="introduzione">
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="videos/ghost.mp4" type="video/mp4" />
+      </video>
+
+      <div class="content">
+        <h2 class="intro-title">Perche' questo argomento?</h2>
+        <h2 class="intro-title">Cosa e' il paranormale?</h2>
+      </div>
+    </section>
+
+    <section id="religione">
+      <h2>Religione</h2>
+      <div class="section-container">
+        <div class="card">
+          <img src="images/fede-scienza.jpg" alt="" />
+          <h3>Fede e scienza</h3>
+          <p>
+            Fede e scienza sono due modi diversi di guardare il mondo. La fede
+            si basa sulla spiritualità e sulle credenze personali, mentre la
+            scienza si fonda sull’osservazione e la prova. A volte sembrano in
+            contrasto, ma possono anche convivere: la scienza spiega il “come”,
+            la fede cerca il “perché”.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/confronto-tra-tutto.jpg" alt="" />
+          <h3>Differenza tra Paranormale fede e scienza</h3>
+          <p>
+            Fede e scienza sono due visioni diverse: la scienza cerca
+            spiegazioni con prove, la fede si basa su credenze spirituali. Il
+            paranormale si trova in una zona grigia tra le due: fenomeni
+            inspiegabili che la scienza non conferma, ma che la fede o
+            l’esperienza personale a volte accetta.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="scienze">
+      <img src="images/ufo.png" class="ufo" alt="" />
+      <h2>Scienze</h2>
+      <div class="section-container">
+        <div class="card">
+          <video
+            src="videos/black_hole.mp4"
+            autoplay
+            muted
+            loop
+            width="600"
+          ></video>
+
+          <h3>Il mistero dei buchi neri</h3>
+          <p>
+            I buci neri rimangono un pezzo di mistero ancora oggi per le sue
+            caratteristiche affascinanti come ad esempio il cambiamento delle
+            leggi della fisica, una diversa percezione del tempo e per il suo
+            mistero di cosa si nasconde all interno
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/star_diagram.jpg" alt="" />
+          <h3>Diagramma delle stelle</h3>
+          <p>
+            Le stelle vengono caratterizzate per il loro colore (che dipende dal
+            calore), luminosità e grandezza. Per rappresentare queste
+            caratteristiche si utilizza un diagramma chiamato diagramma di
+            Hertzsprung-Russell, che mette in relazione la luminosità delle
+            stelle con la loro temperatura superficiale, permettendo di
+            classificare le diverse tipologie di stelle.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/string_theory.jpg" alt="" />
+          <h3>La teoria delle stringhe</h3>
+          <p>
+            Una teoria fondata da Richard Feynman e altri scienziati che
+            consiste nel l’idea che le particelle fondamentali non siano punti,
+            ma minuscole corde vibranti le cui diverse vibrazioni danno origine
+            a tutte le particelle e forze dell’universo. E cio introduce anche
+            la possibilita di un universo parallelo
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="geografia">
+      <img src="images/bolt.gif" alt="" class="bolt">
+      <h2>Geografia</h2>
+      <div class="section-container">
+        <div class="card">
+          <img src="images/bermuda_triangle.png" alt="" />
+          <h3>Triangolo delle Bermuda</h3>
+          <p>
+            Un'area geografica situata nell'oceano Atlantico, famosa per il suo
+            lato oscuro e misterioso. Nel corso degli anni, numerose navi e
+            aerei sono scomparsi inspiegabilmente mentre attraversavano questa
+            zona, alimentando leggende e teorie sul paranormale. Il Triangolo
+            delle Bermuda continua a essere oggetto di studi e racconti
+            affascinanti, tra scienza e mistero.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/flight_19.jpg" alt="" />
+          <h3>Flight 19</h3>
+          <p>
+            Uno dei casi più famosi riguarda il volo "Flight 19", una
+            squadriglia di cinque aerei della Marina degli Stati Uniti scomparsa
+            misteriosamente il 5 dicembre 1945 durante una missione di
+            addestramento sopra il Triangolo delle Bermuda. Nonostante le
+            ricerche, né gli aerei né l'equipaggio furono mai ritrovati,
+            alimentando miti e teorie sul paranormale legate a questa zona.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/USS_cyclops.avif" alt= />
+          <h3>USS Cyclops</h3>
+          <p>
+            Un altro caso celebre è quello della USS Cyclops, una nave cargo
+            statunitense scomparsa misteriosamente nel Triangolo delle Bermuda
+            nel 1918. A bordo vi erano oltre 300 persone e nessun relitto o
+            traccia della nave è mai stato ritrovato. La sua sparizione resta
+            ancora oggi uno dei più grandi misteri irrisolti del mare.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologia">
+      <h2>Tecnologia</h2>
+
+      <div class="section-container">
+        <img src="images/alien.png" alt="Alien" class="alien" />
+
+        <div class="card">
+          <img src="images/nuclear-sign.jpg" alt="" />
+          <h3>Energia nucleare</h3>
+          <p>
+            Una energia non rinnovabile che viene usata nei cenrali nucleari per
+            fornire energia elettrica me e una forma abbastanza pericolosa
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/chernobyl-disaster.jpg" alt="" />
+          <h3>Chernobyl</h3>
+          <p>
+            Una centrale nucleare situato nel nord del ucraina. Subbi una grande
+            esplosione e ci furono tanti morti per la sua causa
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/bird-black.jpg" alt="" />
+          <h3>The black Bird</h3>
+          <p>
+            Una creatura sovrannaturale che ha la assmoglianza di un corvo con
+            occhi rossi. Si diche che porta sfortuna e morte e che sia legato
+            alla leggenda del mammoth
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="italiano">
+      <div class="clover">
+        <img src="images/clover.png" alt="" />
+        <img src="images/clover.png" alt="" />
+        <img src="images/clover.png" alt="" />
+        <img src="images/clover.png" alt="" />
+        <img src="images/clover.png" alt="" />
+        <img src="images/clover.png" alt="" />
+
+      </div>
+
+      <h2>Italiano</h2>
+      <div class="section-container">
+        <div class="card">
+          <img src="images/gio_verga.jpg" alt="" />
+          <h3>Giovanni Verga</h3>
+          <p>
+            Scrittore famoso e uno dei protagonisti del Verismo una corrente
+            letteraia che desrive le cose cio come sono e usa personaggi di
+            gente comune
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/superstitions.jpg" alt="" />
+          <h3>La Superstizione</h3>
+          <p>
+            Verga affronta il tema della superstizione nelle sue opere,
+            descrivendola come una credenza irrazionale che nasce da tradizioni
+            popolari o paure ancestrali. La superstizione si manifesta in vari
+            modi, come ad esempio l’idea che rompere uno specchio porti sfortuna
+            o che l’incontro con un gatto nero sia di cattivo auspicio.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/La_lupa.jpg" alt="" />
+          <h3>La lupa</h3>
+          <p>
+            Lo affronta in particolare nel suo racconto La Lupa. La Lupa e un
+            racconto dove la donna protagonista viene giudicata per il suo
+            carattere selvatico e agressivo e viene paragonata come una strega
+            in modo metaforico
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="edcivica">
+      <h2>Educazione Civica</h2>
+      <div class="section-container">
+        <div class="card">
+          <img src="images/violenza-donne.jpg" alt="" />
+          <h3>Violenza sulle donne</h3>
+          <p>
+            La violenza sulle sonne e un argomento che ancora oggi e importante
+            parlarne perche ci sono ancora oggi molti casi di sicriminazione e
+            femminicidio che succedono. La discriminazione sulle donne va
+            indietro da molti molti secoli
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/dama-bianca.jpg" alt="" />
+          <h3>La dama bianca</h3>
+          <p>
+            La Dama Bianca è una leggenda diffusa in molte parti d’Europa. Si
+            racconta che sia lo spirito di una donna vestita di bianco, spesso
+            vittima di violenza o ingiustizia. Appare nei castelli o lungo le
+            strade per ricordare le sofferenze subite dalle donne e mettere in
+            guardia contro la violenza e la discriminazione.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="english">
+      <img src="images/ouijatool.png" alt="" class="ouija">
+      <h2>English</h2>
+      <div class="section-container">
+        <div class="card">
+          <img src="images/victorian_age.webp" alt="" />
+          <h3>Victorian age</h3>
+          <p>
+            The Victorian Age (1837–1901) was a time of great change in Britain,
+            characterized by industrial growth, urbanization, and the expansion
+            of the British Empire. It was also an era of strict social values,
+            with strong emphasis on morality, duty, and family. Literature,
+            science, and technology flourished, but the period also highlighted
+            deep social inequalities and inspired movements for reform.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/queenVictoria.png" alt="" />
+          <h3>Queen Victoria</h3>
+          <p>
+            Queen Victoria had a well-documented interest in the paranormal
+            especially after the death of her husband, she became fascinated
+            with mediums, séances, and the idea of communicating with the dead,
+            often attending private sessions in hopes of connecting with
+            Albert’s spirit.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/ouija.jpg" alt="" />
+          <h3>Passion of Paranormal</h3>
+          <p>
+            The victorian age is considered a gothic age for its architecture
+            and literature but also cause of its passion of ghosts and spirits.
+            They often did rituals with oujia bords to connect with the spirit
+            world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="francaise">
+      <h2>Française</h2>
+      <div class="section-container">
+        <div class="card">
+          <img src="images/mont-saint-michel.jpg" alt="" />
+          <h3>Le Mont Saint-Michel</h3>
+          <p>
+            Le Mont-Saint-Michel est une île rocheuse située en Normandie,
+            célèbre pour son abbaye médiévale perchée au sommet. À marée haute,
+            l’île est entourée d’eau, ce qui la rend spectaculaire. C’est un
+            site historique et touristique majeur, classé au patrimoine mondial
+            de l’UNESCO.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/archangelo.jpg" alt="" />
+          <h3>l'Archange Michel</h3>
+          <p>
+            L’archange Michel est un chef des armées célestes dans la tradition
+            chrétienne. Il est souvent représenté combattant le mal, notamment
+            le dragon. Il est le saint patron des soldats et des policiers. On
+            dit qu’il fut aperçu au Mont-Saint-Michel, dont il est devenu le
+            symbole, et où il aurait inspiré la construction de l’abbaye.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/saintMichel.png" alt="" />
+          <h3>Le moine fantôme</h3>
+          <p>
+            Le Mont-Saint-Michel est une île de Normandie célèbre pour son
+            abbaye perchée sur un rocher. À marée haute, elle semble flotter sur
+            la mer. Symbole du lieu, l’archange Michel y serait apparu à un
+            évêque et aurait inspiré la construction de l’abbaye. On dit aussi
+            que des moines fantômes y ont été aperçus la nuit, chantant ou
+            marchant dans les couloirs, ajoutant une touche mystérieuse à ce
+            site sacré.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="storia">
+      <img src="images/ghostie.gif" alt="" class="ghost">
+      <h2>Storia</h2>
+
+      <div class="section-container">
+        <div class="card">
+          <img src="images/2-worldwar-battlefield.jpg" alt="" />
+          <h3>Seconda guerra mondiale</h3>
+          <p>
+            La seconda guerra mondiale incomincio negli anni 40 con la presa di
+            Adolf hitler che era alleato con Italia e Giappone e combattevano
+            contro L'URSS stati uniti francia e inghilterra.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/solider-scared.webp" alt="" />
+          <h3>Terrore della guerra</h3>
+          <p>
+            La guerra porto a vari traumi sia nel militare e sia per il popolo.
+            Questo ovviamente a un grande disagio ma anche alcuni soldati
+            incominciarono ad avere delle visioni
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/figure-soldier.webp" alt="" />
+          <h3>Soldati fantasmi</h3>
+          <p>
+            I soldati incominciarono a vedere spiriti e fantasmi ed era anche il
+            periodo dove si incominciava a parlare di leggende metropolitane.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="edfisica">
+      <h2>Educazione fisica</h2>
+      <div class="section-container">
+        <div class="card">
+          <img
+            src="images/Schema-alimentazione-dello-sportivo-a-livello-agonistico.webp"
+            alt=""
+          />
+          <h3>Importanza della salute del corpo</h3>
+          <p>
+            Per un atleta, la salute del corpo è tutto. Senza un corpo sano e
+            forte, non si può allenarsi bene né raggiungere risultati. Prendersi
+            cura del fisico con esercizio, riposo e alimentazione giusta è
+            fondamentale per migliorare le prestazioni e prevenire infortuni. La
+            salute è la vera base della vittoria.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/sleep_experiment.jpeg" alt="" />
+          <h3>Russian sleep experiment</h3>
+          <p>
+            Il Russian Sleep Experiment mostra cosa può succedere se si nega il
+            sonno: mente e corpo si distruggono. Anche se è una storia
+            inventata, ci ricorda quanto il sonno sia fondamentale per la salute
+            e per chi vuole restare in forma e concentrato.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="musica" class="zombie-section">
+      <div class="zombie"><img src="images/zombie.gif" alt="" /></div>
+      <div class="zombie"><img src="images/zombie.gif" alt="" /></div>
+      <div class="zombie"><img src="images/zombie.gif" alt="" /></div>
+      <div class="zombie"><img src="images/zombie.gif" alt="" /></div>
+      <div class="zombie"><img src="images/zombie.gif" alt="" /></div>
+
+      <h2>Musica</h2>
+      <div class="section-container">
+        <div class="card">
+          <img src="images/evolution_pop.jpeg" alt="" />
+          <h3>Evoluzione del pop</h3>
+          <p>
+            Il pop e un genere musicale molto diffuso oggi giorno e comprende
+            vari generecome rock rap hip hop e quant altro. Durante gli anni si
+            e pero evoluta e nn e uguale come lo era prima.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/micheal_jackson.jpg" alt="" />
+          <h3>Il re del pop</h3>
+          <p>
+            Michael Jackson è stato uno degli artisti più influenti della musica
+            pop. Conosciuto come il "Re del Pop", ha rivoluzionato il mondo
+            della musica e del ballo con successi come Billie Jean, Beat It e
+            Thriller. La sua abilità unica nel fondere generi diversi e il suo
+            stile inconfondibile lo hanno reso una leggenda mondiale.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/thriller.jpg" alt="" />
+          <h3>Lato horror e paranormale</h3>
+          <p>
+            Michael Jackson è un’icona mondiale, non solo per la sua musica, ma
+            anche per il suo legame con l’immaginario paranormale. Il video di
+            Thriller, con zombie e trasformazioni da lupo mannaro, è diventato
+            un simbolo della cultura pop. Dopo la sua morte nel 2009, sono nate
+            teorie del complotto: c’è chi afferma di averlo visto vivo, nascosto
+            sotto falsa identità. Tra spettacolo, mistero e leggenda, Michael
+            Jackson continua ad affascinare il mondo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="arte">
+      <h2>Arte</h2>
+      <div class="section-container">
+        <div class="card">
+          <img src="images/salvador-dali.jpg" alt="" />
+          <h3>Surrealismo: Salvador Dali</h3>
+          <p>
+            Il surrealismo e una forma di arte che esprime il mondo
+            dell'incomincio e esplora l'inspiegabile e cio che va oltre la
+            realta. Uno dei artisti piu noti e Salvador Dali
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/clock_painting.webp" alt="" />
+          <h3>La persistenza della memoria</h3>
+          <p>
+            è un dipinto di Salvador Dalí del 1931. Mostra orologi molli che si
+            sciolgono in un paesaggio silenzioso e irreale. Con questo quadro,
+            Dalí rappresenta l’inconsistenza del tempo nella dimensione dei
+            sogni, dove tut to è fluido e il tempo perde significato. È un’opera
+            simbolica del surrealismo, che unisce realtà e inconscio.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/swans_painting.avif" alt="" />
+          <h3>Swans Reflecting Elephants</h3>
+          <p>
+            è un dipinto surrealista di Salvador Dalí. Mostra tre cigni su un
+            lago il cui riflesso nell’acqua forma tre elefanti. L’opera
+            rappresenta la doppia immagine e il contrasto tra realtà e
+            percezione, usando il riflesso per trasformare una cosa in un’altra.
+            È un esempio della tecnica di Dalí chiamata “metodo
+            paranoico-critico”, in cui la mente vede più significati in un’unica
+            immagine.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 - Tesina di Manuel Apicella</p>
+    </footer>
+
+    <!-- Modal for images -->
+    <div id="imgModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <audio id="bgMusic" loop>
+      <source src="audio/ghost.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>

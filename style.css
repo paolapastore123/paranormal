@@ -1,0 +1,654 @@
+/* RESET BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f0f0f0;
+  background-color: #000;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 0;
+  z-index: 100;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url('immagini/sfondo.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+  z-index: 1;
+}
+
+.hero::after {
+  content: "go away";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('immagini/nebbia.gif') center center / cover no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.animated-title {
+  font-size: 6rem;
+  color: #ffffff;
+  /* Bianco */
+  text-shadow:
+    0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 15px #00ffff,
+    0 0 20px #00ffff;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+
+.animated-subtitle {
+  font-size: 3rem;
+  color: #dddddd;
+  margin-top: 20px;
+  min-height: 1.5rem;
+  text-shadow:
+    0 0 4px #00ffff66,
+    0 0 6px #00ffff33;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 2s;
+  /* ⏳ subtitle appears 2s after page load */
+}
+
+
+
+
+
+
+/* SECTIONS */
+section {
+  position: relative;
+  padding: 5rem;
+  background-color: #111;
+  border-top: 1px solid #222;
+  overflow: hidden;
+}
+
+section:nth-of-type(even) {
+  background: linear-gradient(34deg, #5b8794 11%, #07171d 100%);
+}
+
+section >img {
+  width: 250px
+}
+
+section#introduzione {
+  background-color: initial;
+}
+
+#introduzione h2 {
+  font-size: 5rem;
+  color: black
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #00ffff;
+  padding: 0 2rem 3rem;
+}
+
+p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* INTRODUZIONE */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenitore immagine + testo */
+
+
+#introduzione {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+#introduzione .content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 30vh; /* adjust as needed */
+}
+
+
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+/* CARDS */
+
+.card {
+  width: 25vw;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 30px #00ffff;
+  border-radius: 1rem;
+}
+
+.card h3 {
+  padding: 2rem;
+  color: #530fa6;
+}
+
+.card p {
+  color: #707070;
+  font-size: 0.9rem;
+  padding: 0 2rem 2rem;
+}
+
+.card video,
+.card img {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* CARD HOVER EFFECT */
+
+.card {
+  transition: transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px #00ffff;
+;
+  z-index: 2;
+}
+
+
+/* MODAL */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px #00ffff55;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* GOOGLE FONTS */
+h2 {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+p {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+
+h3 {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 400;
+}
+
+/* GHOSTS */
+
+.floating-ghost {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url('images/animGhost.gif') no-repeat center center / contain;
+  animation: floatGhost 30s infinite linear;
+  opacity: 0;
+  animation-timing-function: ease-in-out;
+}
+
+.floating-ghost {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url('images/animGhost.gif') no-repeat center center / contain;
+  opacity: 0;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  pointer-events: none;
+  transition: opacity 2s ease;
+}
+
+/* Ghost floating left-to-right */
+.floating-ghost.forward {
+  animation-name: floatGhostRight;
+  left: -100px;
+}
+
+/* Ghost floating right-to-left */
+.floating-ghost.reverse {
+  animation-name: floatGhostLeft;
+  right: -100px;
+  transform: scaleX(-1); /* face left */
+}
+
+/* Rightward movement with increased oscillation */
+@keyframes floatGhostRight {
+  0%   { transform: translateX(0) translateY(0); opacity: 0; }
+  10%  { opacity: 1; }
+  20%  { transform: translateX(20vw) translateY(-30px); }
+  30%  { transform: translateX(30vw) translateY(30px); }
+  40%  { transform: translateX(40vw) translateY(-40px); }
+  50%  { transform: translateX(50vw) translateY(40px); }
+  60%  { transform: translateX(60vw) translateY(-30px); }
+  70%  { transform: translateX(70vw) translateY(30px); }
+  80%  { transform: translateX(80vw) translateY(-20px); }
+  90%  { transform: translateX(90vw) translateY(0); opacity: 1; }
+  100% { transform: translateX(110vw) translateY(0); opacity: 0; }
+}
+
+/* Leftward movement with increased oscillation */
+@keyframes floatGhostLeft {
+  0%   { transform: translateX(0) translateY(0); opacity: 0; }
+  10%  { opacity: 1; }
+  20%  { transform: translateX(-20vw) translateY(-30px); }
+  30%  { transform: translateX(-30vw) translateY(30px); }
+  40%  { transform: translateX(-40vw) translateY(-40px); }
+  50%  { transform: translateX(-50vw) translateY(40px); }
+  60%  { transform: translateX(-60vw) translateY(-30px); }
+  70%  { transform: translateX(-70vw) translateY(30px); }
+  80%  { transform: translateX(-80vw) translateY(-20px); }
+  90%  { transform: translateX(-90vw) translateY(0); opacity: 1; }
+  100% { transform: translateX(-110vw) translateY(0); opacity: 0; }
+}
+
+
+/* navbar animation */
+
+.navbar {
+  background-color: #000;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffff;
+  position: relative;
+  transition: all 0.3s ease;
+  animation: flickerText 4s infinite;
+}
+
+/* Paranormal flicker effect for links */
+@keyframes flickerText {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+
+  20%, 24%, 55% {
+    opacity: 0.4;
+  }
+}
+
+/* Paranormal hover effect */
+.navbar li a:hover {
+  color: #00ffff;
+  text-shadow:
+    0 0 5px #00ffff,
+    0 0 15px #00ffff,
+    0 0 30px #00ffff;
+  filter: brightness(1.4) contrast(1.2);
+  transform: scale(1.05);
+}
+
+#toggleMusicBtn{
+  position: fixed;
+  top:30px
+}
+
+
+
+/* UFO */
+
+.ufo {
+  position: absolute;
+  top: 20%;
+  left: -200px; /* Start off-screen */
+  width: 150px;
+  animation: flyAcross 10s linear infinite, floatY 3s ease-in-out infinite;
+}
+
+@keyframes flyAcross {
+  0% {
+    left: -200px;
+    transform: rotate(-5deg);
+  }
+  100% {
+    left: 110%;
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes floatY {
+  0%, 100% {
+    top: 20%;
+  }
+  50% {
+    top: 15%;
+  }
+}
+
+
+.alien {
+  width: 100px;
+  position: absolute;
+  bottom: -400px;
+  left: 20px;
+  animation: peekUpDown 6s ease-in-out infinite;
+}
+
+
+@keyframes peekUpDown {
+  0%, 100% {
+    bottom: -400px;
+  }
+  25% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -40px;
+  }
+  75% {
+    bottom: 0;
+  }
+}
+
+.clover {
+  position: absolute;
+  bottom: -10px;
+}
+
+.clover img{
+  width: 150px;
+}
+
+
+/* CLOVER ANIMATION */
+.clover {
+  position: absolute;
+  bottom: -10px;
+}
+
+.clover img {
+  width: 150px;
+  transform: translateY(100%) scale(0.8);
+}
+
+/* Only animate when this class is added */
+.clover.animate img {
+  animation: sprout 3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes sprout {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10%) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+.zombie {
+  position: absolute;
+  bottom: -50px;
+  left: -150px
+}
+
+.zombie img {
+  height: 200px;
+}
+
+/* Zombie animation */
+/* Trigger walk only when .animate is added */
+.zombie.animate {
+  animation: zombie-walk 10s linear forwards;
+}
+
+/* Lurch effect on the zombie image */
+.zombie.animate img {
+  animation: zombie-lurch 10s ease-in-out infinite;
+}
+
+/* Zombie moves across screen */
+@keyframes zombie-walk {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+/* Zombie lurch (like limping/dragging a leg) */
+@keyframes zombie-lurch {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(0) rotate(1.5deg);
+  }
+ 75% {
+    transform: translateY(-3px) rotate(-1deg);
+  }
+}
+
+.ghost {
+  width: 350px;
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+}
+
+.bolt {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 500px;
+}
+
+.ouija {
+  position: absolute;
+  width: 200px;
+  animation: ouija-glide 12s ease-in-out infinite;
+  pointer-events: none; /* optional: makes sure it doesn't interfere with clicks */
+  z-index: 2;
+}
+
+@keyframes ouija-glide {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  10%  { transform: translate(80%, 10%) rotate(15deg); }
+  20%  { transform: translate(60%, 30%) rotate(-20deg); }
+  30%  { transform: translate(90%, 50%) rotate(25deg); }
+  40%  { transform: translate(70%, 70%) rotate(-15deg); }
+  50%  { transform: translate(100%, 90%) rotate(30deg); }
+  60%  { transform: translate(40%, 70%) rotate(-25deg); }
+  70%  { transform: translate(10%, 60%) rotate(20deg); }
+  80%  { transform: translate(30%, 30%) rotate(-10deg); }
+  90%  { transform: translate(10%, 10%) rotate(15deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
